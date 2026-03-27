@@ -109,13 +109,13 @@ Short-term → Long-term      →       Frequent + important info persists to st
 pip install ebbingcontext
 
 # With local BGE-M3 embedding model (recommended for production)
-pip install ebbingcontext[bge]
+pip install "ebbingcontext[bge]"
 
 # With OpenAI embedding + LLM fallback
-pip install ebbingcontext[openai]
+pip install "ebbingcontext[openai]"
 
 # All optional dependencies
-pip install ebbingcontext[bge,openai]
+pip install "ebbingcontext[bge,openai]"
 ```
 
 ### Python API

@@ -1,6 +1,6 @@
 """OpenAI-compatible embedding provider.
 
-Requires: pip install ebbingcontext[openai]
+Requires: pip install "ebbingcontext[openai]"
 Supports any OpenAI-compatible API endpoint.
 """
 
@@ -24,7 +24,7 @@ class OpenAIEmbeddingProvider(EmbeddingProvider):
         except ImportError:
             raise ImportError(
                 "openai package is required for OpenAI embeddings. "
-                "Install with: pip install ebbingcontext[openai]"
+                "Install with: pip install "ebbingcontext[openai]""
             )
 
         kwargs: dict = {"api_key": api_key}

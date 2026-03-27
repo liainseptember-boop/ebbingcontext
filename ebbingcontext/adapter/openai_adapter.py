@@ -1,7 +1,7 @@
 """OpenAI-compatible LLM adapter.
 
 Supports any OpenAI-compatible API endpoint.
-Requires: pip install ebbingcontext[openai]
+Requires: pip install "ebbingcontext[openai]"
 """
 
 from __future__ import annotations
@@ -23,7 +23,7 @@ class OpenAIAdapter(LLMAdapter):
             from openai import AsyncOpenAI
         except ImportError:
             raise ImportError(
-                "openai package is required. Install with: pip install ebbingcontext[openai]"
+                "openai package is required. Install with: pip install "ebbingcontext[openai]""
             )
 
         kwargs: dict = {"api_key": api_key}

@@ -1,6 +1,6 @@
 """BGE-M3 embedding provider using sentence-transformers.
 
-Requires: pip install ebbingcontext[bge]
+Requires: pip install "ebbingcontext[bge]"
 Model: BAAI/bge-m3 (1024 dimensions)
 Lazy-loads the model on first call.
 """
@@ -34,7 +34,7 @@ class BGEEmbeddingProvider(EmbeddingProvider):
                     except ImportError:
                         raise ImportError(
                             "sentence-transformers is required for BGE-M3 embeddings. "
-                            "Install with: pip install ebbingcontext[bge]"
+                            "Install with: pip install "ebbingcontext[bge]""
                         )
                     self._model = SentenceTransformer(self._model_name)
 

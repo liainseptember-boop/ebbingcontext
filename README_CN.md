@@ -80,13 +80,13 @@ EbbingContext 将艾宾浩斯遗忘曲线的认知科学原理工程化，构建
 pip install ebbingcontext
 
 # 使用本地 BGE-M3 嵌入模型（生产推荐）
-pip install ebbingcontext[bge]
+pip install "ebbingcontext[bge]"
 
 # 使用 OpenAI 嵌入 + LLM 分类兜底
-pip install ebbingcontext[openai]
+pip install "ebbingcontext[openai]"
 
 # 所有可选依赖
-pip install ebbingcontext[bge,openai]
+pip install "ebbingcontext[bge,openai]"
 ```
 
 ### Python API

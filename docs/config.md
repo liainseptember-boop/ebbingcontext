@@ -86,8 +86,8 @@ Environment variables override YAML values:
 | Model | Dependency | Dimension | Use Case |
 |-------|-----------|-----------|----------|
 | `lite` | None (built-in) | 256 | Development, testing, zero-dependency |
-| `bge-m3` | `pip install ebbingcontext[bge]` | 1024 | Production (local, no API calls) |
-| `openai` | `pip install ebbingcontext[openai]` | 1536 | Production (API-based) |
+| `bge-m3` | `pip install "ebbingcontext[bge]"` | 1024 | Production (local, no API calls) |
+| `openai` | `pip install "ebbingcontext[openai]"` | 1536 | Production (API-based) |
 
 The system automatically falls back to `lite` if the configured model is unavailable.
 
