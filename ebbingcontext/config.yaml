@@ -1,0 +1,66 @@
+# EbbingContext Default Configuration
+
+# Decay algorithm parameters
+decay:
+  # Base stability factor
+  s_base: 1.0
+  # Stability growth rate (logarithmic)
+  alpha: 0.3
+  # Active layer beta (super-linear, fast decay)
+  beta_active: 1.2
+  # Warm layer beta (sub-linear, slow decay)
+  beta_warm: 0.8
+  # Floor retention ratio
+  rho: 0.1
+
+# Storage layer thresholds
+storage:
+  # Active -> Warm threshold
+  theta_active: 0.6
+  # Warm -> Archive threshold
+  theta_archive: 0.15
+
+# Pin constraints
+pin:
+  # Max ratio of pin items to total memory budget
+  max_ratio: 0.3
+
+# Conflict detection
+conflict:
+  # Auto-overwrite threshold
+  auto_overwrite_threshold: 0.9
+  # Association threshold
+  association_threshold: 0.7
+
+# Prompt assembly
+prompt:
+  # Output token reservation
+  output_reserve: 1024
+  # Recent conversation turns to always include
+  recent_turns: 3
+  # Warm retrieval trigger: search Warm when Active best similarity below this
+  warm_retrieval_threshold: 0.5
+  # Max items to retrieve from Warm per query
+  warm_top_k: 10
+
+# Embedding
+embedding:
+  # Model: "bge-m3" (local) or "openai" (API)
+  model: "bge-m3"
+  # Dimension (BGE-M3 default)
+  dimension: 1024
+
+# Vector store
+vector_store:
+  # Backend: "chromadb" or "pgvector"
+  backend: "chromadb"
+  # ChromaDB persist directory
+  persist_dir: ".ebbingcontext/chroma"
+
+# LLM adapter (for classification fallback)
+adapter:
+  # Provider: "builtin" or "openai_compatible"
+  provider: "builtin"
+  # OpenAI-compatible endpoint (when provider=openai_compatible)
+  # base_url: "https://api.openai.com/v1"
+  # model: "gpt-4o-mini"
