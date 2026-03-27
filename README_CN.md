@@ -9,7 +9,7 @@
 
 > 让 AI Agent 像人脑一样管理记忆：该记住的牢牢记住，该遗忘的优雅释放。
 
-[English](./README.md) | [架构设计详解](./ARCHITECTURE.md) | [在线演示 →](#demo)
+[English](./README.md) | [架构设计详解](./ARCHITECTURE.md) | [在线演示 →](https://liainseptember-boop.github.io/ebbingcontext/)
 
 ---
 
@@ -146,7 +146,7 @@ engine.store("这条记忆会在重启后依然存在")
 
 交互式演示，实时观察记忆如何衰减、被引用后如何回升、如何在三层存储间迁移：
 
-**[→ 在线演示](./demo/)** (即将上线)
+**[→ 在线演示](https://liainseptember-boop.github.io/ebbingcontext/)**
 
 ## 性能基准
 

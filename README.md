@@ -9,7 +9,7 @@
 
 > Let AI Agents manage memory like the human brain: retain what matters, gracefully forget what doesn't.
 
-[中文文档](./README_CN.md) | [Architecture Design](./ARCHITECTURE.md) | [Live Demo →](#demo)
+[中文文档](./README_CN.md) | [Architecture Design](./ARCHITECTURE.md) | [Live Demo →](https://liainseptember-boop.github.io/ebbingcontext/)
 
 ---
 
@@ -175,7 +175,7 @@ engine.store("This memory will persist across sessions")
 
 Try the interactive demo to see how memories decay in real-time, strengthen when recalled, and migrate across storage tiers:
 
-**[→ Live Demo](./demo/)** (coming soon)
+**[→ Live Demo](https://liainseptember-boop.github.io/ebbingcontext/)**
 
 ## Benchmarks
 
